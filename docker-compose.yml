@@ -1,0 +1,7 @@
+version: '3'
+services:
+  ocrad:
+    build: .
+    volumes:
+      - ./samples:/samples
+    command: bash -c "time ocrad -f -o /samples/1.txt /samples/1.pbm"
